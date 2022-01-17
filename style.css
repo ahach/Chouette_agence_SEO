@@ -24,7 +24,7 @@ a:hover {
     bottom: 0;
     width: 100%;
     z-index: 100000;
-    background: #FFF url(img/pageload-spinner.gif) no-repeat center center
+    background: #FFF url(img/pageload-spinner.gif) no-repeat center center; background-size: auto;
 }
 
 .bloc {
@@ -303,12 +303,14 @@ a:hover {
 
 .navbar-brand img {
     max-height: 200px;
+    max-width: fit-content;
     margin: 0 5px 0 0;
     display: inline
 }
 
 .navbar-brand img[src$=svg] {
-    min-width: 100px
+    min-width: 100px;
+    min-height: fit-content;
 }
 
 .nav-center .navbar-brand img {
@@ -580,6 +582,7 @@ a[data-lightbox]:hover img {
 
 #lightbox-modal .modal-dialog img {
     max-height: 90vh;
+    max-width: fit-content;
     margin: 0 auto
 }
 
@@ -817,19 +820,23 @@ h4 {
 }
 
 .bg-dots-bg {
-    background-image: url(img/dots-bg.png)
+    background-image: url(img/dots-bg.png);
+    background-size: auto;
 }
 
 .bg-lines-h2-bg {
-    background-image: url(img/lines-h2-bg.png)
+    background-image: url(img/lines-h2-bg.png);
+    background-size: auto;
 }
 
 .bg-banniere {
-    background-image: url(img/la-chouette-agence-banniere.jpg)
+    background-image: url(img/la-chouette-agence-banniere.jpg);
+    background-size: auto;
 }
 
 .bg-presentation {
-    background-image: url(img/image-de-presentation.jpg)
+    background-image: url(img/image-de-presentation.jpg);
+    background-size: auto;
 }
 
 @media (max-width:1024px) {
@@ -991,6 +998,7 @@ h4 {
 
     .navbar-brand img {
         max-height: 40px;
+        max-width: fit-content;
         width: auto
     }
 
